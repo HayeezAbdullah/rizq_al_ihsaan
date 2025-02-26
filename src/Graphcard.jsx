@@ -19,22 +19,30 @@ const data = [
 
 const GraphCard = () => {
   return (
-    <div className="bg-white shadow-md w-full h-[300px] rounded-lg p-6">
-      <h2 className="text-gray-700 font-semibold text-lg">User Growth</h2>
-      <ResponsiveContainer width="100%" height="80%">
+    <div className="bg-white shadow-lg rounded-xl p-6 border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+      <h2 className="text-gray-700 text-xl font-semibold text-center mb-4">
+        Fund Growth Over Time
+      </h2>
+
+      <ResponsiveContainer width="100%" height={280}>
         <LineChart data={data}>
-          <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="name" />
-          <YAxis />
+          <CartesianGrid strokeDasharray="3 3" stroke="#E5E7EB" />
+          <XAxis dataKey="name" tick={{ fill: "#6B7280" }} />
+          <YAxis tick={{ fill: "#6B7280" }} />
           <Tooltip />
           <Line
             type="monotone"
             dataKey="value"
-            stroke="#8884d8"
-            strokeWidth={2}
+            stroke="#6D28D9"
+            strokeWidth={3}
+            dot={{ stroke: "#6D28D9", strokeWidth: 2 }}
           />
         </LineChart>
       </ResponsiveContainer>
+
+      <div className="text-center text-purple-700 font-semibold text-lg mt-4">
+        Months
+      </div>
     </div>
   );
 };
