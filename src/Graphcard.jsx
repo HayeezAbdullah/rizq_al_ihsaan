@@ -40,7 +40,7 @@ const GraphCard = () => {
         </LineChart>
       </ResponsiveContainer>
 
-      <div className="text-center text-purple-700 font-semibold text-lg mt-4">
+      <div className="text-center text-gray-700 font-semibold text-lg mt-4">
         Months
       </div>
     </div>
