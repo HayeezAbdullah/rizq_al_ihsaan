@@ -1,6 +1,9 @@
-const Card = ({ title, number, icon }) => {
+const Card = ({ title, number, icon, ontrigger }) => {
   return (
-    <div className="bg-[#E3D2C3] shadow-lg w-full h-[133px] rounded-xl p-5 flex flex-col justify-between relative hover:shadow-xl transition-shadow duration-300 border">
+    <div
+      onClick={ontrigger}
+      className="bg-[#E3D2C3] shadow-lg w-full h-[133px] rounded-xl p-5 flex flex-col justify-between relative hover:shadow-xl transition-shadow duration-300 border"
+    >
       {icon && (
         <div className="absolute right-4 top-4 text-[#2DAA9E] text-2xl hidden lg:block">
           {icon}

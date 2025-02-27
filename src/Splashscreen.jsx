@@ -15,8 +15,8 @@ const SplashScreen = ({ setIsLoading }) => {
       animate={{ opacity: 0 }}
       transition={{ duration: 1.5, delay: 1.5 }}
     >
-      <img src="./btlogo.png" alt="Logo" className="w-auto h-32 mb-4" />
-      <p className="text-lg tracking-widest">
+      <img src="./btlogo.png" alt="Logo" className="w-auto h-10 mb-4" />
+      <p className="text-sm tracking-widest">
         Powered by Black Turban Solutions
       </p>
     </motion.div>

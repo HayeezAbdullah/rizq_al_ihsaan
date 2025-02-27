@@ -9,19 +9,19 @@ import {
 } from "recharts";
 
 const data = [
-  { name: "2019", value: 30 },
-  { name: "2020", value: 28 },
-  { name: "2021", value: 25 },
-  { name: "2022", value: 20 },
-  { name: "2023", value: 15 },
-  { name: "2024", value: 12 },
+  { name: "2024", al: 12, ol: 15 },
+  { name: "2023", al: 18, ol: 20 },
+  { name: "2022", al: 25, ol: 28 },
+  { name: "2021", al: 30, ol: 35 },
+  { name: "2020", al: 40, ol: 45 },
+  { name: "2019", al: 50, ol: 48 },
 ];
 
-const Dropoutstats = () => {
+const Performancestats = () => {
   return (
-    <div className="bg-[#E3D2C3] border shadow-lg rounded-xl p-6   hover:shadow-xl transition-shadow duration-300">
+    <div className="bg-[#E3D2C3] border shadow-lg rounded-xl p-6 hover:shadow-xl transition-shadow duration-300">
       <h2 className="text-[#2DAA9E] text-xl font-semibold text-center mb-4">
-        Dropout Stats
+        Performance Stats
       </h2>
 
       <ResponsiveContainer width="100%" height={280}>
@@ -32,10 +32,19 @@ const Dropoutstats = () => {
           <Tooltip />
           <Line
             type="monotone"
-            dataKey="value"
+            dataKey="al"
             stroke="#66D2CE"
             strokeWidth={3}
             dot={{ stroke: "#66D2CE", strokeWidth: 2 }}
+            name="A/L Performance (2A and more)"
+          />
+          <Line
+            type="monotone"
+            dataKey="ol"
+            stroke="#FF6B6B"
+            strokeWidth={3}
+            dot={{ stroke: "#FF6B6B", strokeWidth: 2 }}
+            name="O/L Performance (5A and more)"
           />
         </LineChart>
       </ResponsiveContainer>
@@ -47,4 +56,4 @@ const Dropoutstats = () => {
   );
 };
 
-export default Dropoutstats;
+export default Performancestats;
