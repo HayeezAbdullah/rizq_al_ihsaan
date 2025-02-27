@@ -19,7 +19,7 @@ const data = [
 
 const GraphCard = () => {
   return (
-    <div className="bg-[#E3D2C3] shadow-lg rounded-xl p-6   hover:shadow-xl transition-shadow duration-300">
+    <div className="bg-[#E3D2C3] border shadow-lg rounded-xl p-6   hover:shadow-xl transition-shadow duration-300">
       <h2 className="text-[#2DAA9E] text-xl font-semibold text-center mb-4">
         Fund Growth Over Time
       </h2>
