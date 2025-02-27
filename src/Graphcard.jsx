@@ -33,9 +33,9 @@ const GraphCard = () => {
           <Line
             type="monotone"
             dataKey="value"
-            stroke="#66D2CE"
-            strokeWidth={3}
-            dot={{ stroke: "#66D2CE", strokeWidth: 2 }}
+            stroke="#2DAA9E"
+            strokeWidth={5}
+            dot={{ stroke: "#2DAA9E", strokeWidth: 5 }}
           />
         </LineChart>
       </ResponsiveContainer>

@@ -33,9 +33,9 @@ const Dropoutstats = () => {
           <Line
             type="monotone"
             dataKey="value"
-            stroke="#66D2CE"
+            stroke="#497D74"
             strokeWidth={3}
-            dot={{ stroke: "#66D2CE", strokeWidth: 2 }}
+            dot={{ stroke: "#497D74", strokeWidth: 5 }}
           />
         </LineChart>
       </ResponsiveContainer>

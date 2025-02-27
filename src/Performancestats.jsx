@@ -33,17 +33,17 @@ const Performancestats = () => {
           <Line
             type="monotone"
             dataKey="al"
-            stroke="#66D2CE"
+            stroke="#ED6363"
             strokeWidth={3}
-            dot={{ stroke: "#66D2CE", strokeWidth: 2 }}
+            dot={{ stroke: "#ED6363", strokeWidth: 5 }}
             name="A/L Performance (2A and more)"
           />
           <Line
             type="monotone"
             dataKey="ol"
-            stroke="#FF6B6B"
+            stroke="#001A6E"
             strokeWidth={3}
-            dot={{ stroke: "#FF6B6B", strokeWidth: 2 }}
+            dot={{ stroke: "#001A6E", strokeWidth: 5 }}
             name="O/L Performance (5A and more)"
           />
         </LineChart>
