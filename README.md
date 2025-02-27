@@ -25,6 +25,7 @@ The system helps in understanding the **social and educational struggles** of fa
 
 ## Technologies Used
 - React.js
+- Electron (Desktop Version)
 - Tailwind CSS
 - Recharts (Data Visualization)
 - Framer Motion (Splash Screen Animations)
