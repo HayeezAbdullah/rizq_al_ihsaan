@@ -19,8 +19,8 @@ const data = [
 
 const GraphCard = () => {
   return (
-    <div className="bg-white shadow-lg rounded-xl p-6 border border-gray-200 hover:shadow-xl transition-shadow duration-300">
-      <h2 className="text-gray-700 text-xl font-semibold text-center mb-4">
+    <div className="bg-[#E3D2C3] shadow-lg rounded-xl p-6   hover:shadow-xl transition-shadow duration-300">
+      <h2 className="text-[#2DAA9E] text-xl font-semibold text-center mb-4">
         Fund Growth Over Time
       </h2>
 
@@ -33,9 +33,9 @@ const GraphCard = () => {
           <Line
             type="monotone"
             dataKey="value"
-            stroke="#6D28D9"
+            stroke="#66D2CE"
             strokeWidth={3}
-            dot={{ stroke: "#6D28D9", strokeWidth: 2 }}
+            dot={{ stroke: "#66D2CE", strokeWidth: 2 }}
           />
         </LineChart>
       </ResponsiveContainer>
