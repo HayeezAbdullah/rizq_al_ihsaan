@@ -5,8 +5,24 @@ import Header from "./Header";
 import { AiOutlineHeart } from "react-icons/ai";
 import { AiOutlineUser } from "react-icons/ai";
 import { FaDollarSign } from "react-icons/fa";
+import Zakathfund from "./Zakathfund";
+import { useState, useEffect } from "react";
+import SplashScreen from "./Splashscreen";
 
 const App = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 3000); // 3 seconds splash screen
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (isLoading) {
+    return <SplashScreen />;
+  }
+
   return (
     <div className="bg-[#EAEAEA] min-h-screen">
       {/* <Navbar /> */}
@@ -27,8 +43,11 @@ const App = () => {
             />
           </div>
 
-          <div className="w-full md:w-[75%]">
+          <div className="w-full md:w-[37%]">
             <GraphCard />
+          </div>
+          <div className="w-full md:w-[38%]">
+            <Zakathfund />
           </div>
         </div>
       </div>

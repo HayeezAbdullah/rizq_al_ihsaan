@@ -4,9 +4,9 @@ const Header = () => {
       <div className="max-w-2xl  p-5 rounded-lg ">
         <h1 className="text-4xl md:text-4xl font-extrabold text-gray-800 leading-tight">
           Upcoming Event: <br />
-          <span className="text-[#2DAA9E]">Ramazan Khutba🌙 !</span>
+          <span className="text-[#2DAA9E]">Career Guidance Programme 🎓</span>
         </h1>
-        <p className="text-lg text-gray-600 mt-4">
+        <p className="text-lg text-gray-600 ">
           Join us for an amazing event filled with exciting moments and valuable
           insights.
         </p>

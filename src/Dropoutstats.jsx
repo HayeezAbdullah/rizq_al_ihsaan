@@ -17,11 +17,11 @@ const data = [
   { name: "Jun", value: 350 },
 ];
 
-const GraphCard = () => {
+const Dropoutstats = () => {
   return (
     <div className="bg-[#E3D2C3] border shadow-lg rounded-xl p-6   hover:shadow-xl transition-shadow duration-300">
       <h2 className="text-[#2DAA9E] text-xl font-semibold text-center mb-4">
-        Sadhaqa Fund
+        Fund Growth Over Time
       </h2>
 
       <ResponsiveContainer width="100%" height={280}>
@@ -40,11 +40,11 @@ const GraphCard = () => {
         </LineChart>
       </ResponsiveContainer>
 
-      <div className="text-center text-gray-700 font-semibold text-lg">
+      <div className="text-center text-gray-700 font-semibold text-lg mt-4">
         Months
       </div>
     </div>
   );
 };
 
-export default GraphCard;
+export default Dropoutstats;
